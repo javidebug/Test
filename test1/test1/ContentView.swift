@@ -20,6 +20,10 @@ struct ContentView: View {
                     .fontWeight(.black)
                     .font(.system(.title, design: .monospaced))
             }
+            .padding(10)
+            .foregroundColor(.white)
+            .background(Color.purple)
+            .cornerRadius(6)
             }
         }
     }
