@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    let synthesizer = AVSpeechSynthesizer()
+    
     var body: some View {
         VStack {
             Text("Hello, world!")
                 .fontWeight(.black)
                 .font(.largeTitle)
             Button {
-                //da
+                let utterance = AVSpeechUtterance(string: "Salam, I'm Javid")
+                utterance.voice = AVSpeechSynthesisVoice(language: "en-EN")
+                synthesizer.speak(utterance)
             } label: {
                 Text("Klik et")
                     .fontWeight(.black)
