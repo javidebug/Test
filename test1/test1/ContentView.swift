@@ -6,32 +6,42 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct ContentView: View {
-    let synthesizer = AVSpeechSynthesizer()
-    
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            Text("I'm Cavid")
                 .fontWeight(.black)
                 .font(.largeTitle)
-            Button {
-                let utterance = AVSpeechUtterance(string: "Salam, I'm Javid")
-                utterance.voice = AVSpeechSynthesisVoice(language: "en-EN")
-                synthesizer.speak(utterance)
-            } label: {
-                Text("Klik et")
-                    .fontWeight(.black)
-                    .font(.system(.title, design: .monospaced))
-            }
-            .padding(10)
-            .foregroundColor(.white)
-            .background(Color.purple)
-            .cornerRadius(6)
+            HStack {
+                Button {
+                    //da
+                } label: {
+                    Text("Klik et")
+                        .fontWeight(.black)
+                        .font(.system(.title, design: .monospaced))
+                }
+                .padding(10)
+                .foregroundColor(.white)
+                .background(Color.purple)
+                .cornerRadius(6)
+                
+                Button {
+                    //da
+                } label: {
+                    Text("Cancel")
+                        .fontWeight(.black)
+                        .font(.system(.title, design: .monospaced))
+                }
+                .padding(10)
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(6)
             }
         }
     }
+    
+}
 
 #Preview {
     ContentView()
