@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            Image("user3")
+                .resizable()
+                .scaledToFit()
+            
             Text("I'm Cavid")
                 .fontWeight(.black)
                 .font(.largeTitle)
