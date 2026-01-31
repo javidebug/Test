@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        VStack (spacing: 30){
             HStack{
                 VStack{
                     Image("user1")
@@ -32,6 +32,7 @@ struct ContentView: View {
                     Text("Reshid")
                 }
             }
+
             
             Text("Hello Dev-op Team")
                 .fontWeight(.black)
@@ -61,6 +62,8 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(6)
             }
+            
+            Spacer()
         }
     }
     
