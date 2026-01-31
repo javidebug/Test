@@ -10,11 +10,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image("user3")
-                .resizable()
-                .scaledToFit()
+            HStack{
+                VStack{
+                    Image("user1")
+                        .resizable()
+                        .scaledToFit()
+                    Text("Esmer")
+                }
+                
+                VStack{
+                    Image("user2")
+                        .resizable()
+                        .scaledToFit()
+                    Text("Zohrab")
+                    
+                }
+                VStack{
+                    Image("user3")
+                        .resizable()
+                        .scaledToFit()
+                    Text("Reshid")
+                }
+            }
             
-            Text("I'm Cavid")
+            Text("Hello Dev-op Team")
                 .fontWeight(.black)
                 .font(.largeTitle)
             HStack {
