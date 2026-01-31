@@ -10,59 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack (spacing: 30){
-            HStack{
-                VStack{
-                    Image("user1")
-                        .resizable()
-                        .scaledToFit()
-                    Text("Esmer")
-                }
-                
-                VStack{
-                    Image("user2")
-                        .resizable()
-                        .scaledToFit()
-                    Text("Zohrab")
-                    
-                }
-                VStack{
-                    Image("user3")
-                        .resizable()
-                        .scaledToFit()
-                    Text("Reshid")
-                }
-            }
-
             
+        TeamMembersView()
+    
             Text("Hello Dev-op Team")
                 .fontWeight(.black)
                 .font(.largeTitle)
-            HStack {
-                Button {
-                    //da
-                } label: {
-                    Text("Klik et")
-                        .fontWeight(.black)
-                        .font(.system(.title, design: .monospaced))
-                }
-                .padding(10)
-                .foregroundColor(.white)
-                .background(Color.purple)
-                .cornerRadius(6)
-                
-                Button {
-                    //da
-                } label: {
-                    Text("Cancel")
-                        .fontWeight(.black)
-                        .font(.system(.title, design: .monospaced))
-                }
-                .padding(10)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .cornerRadius(6)
-            }
-            
+           
+        CallButtonView()
             Spacer()
         }
     }
